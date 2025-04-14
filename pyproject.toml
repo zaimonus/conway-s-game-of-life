@@ -14,5 +14,8 @@ license = { text = "MIT" }
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
+[project.scripts]
+run = "conways_game_of_life.cli:main"
+
 [tool.pdm]
 distribution = true
