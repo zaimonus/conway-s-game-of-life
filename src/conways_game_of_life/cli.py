@@ -12,7 +12,8 @@ def print_grid(cells: set[Cell], width: int, height: int):
     print("+", " ".join("-" * (width * 2 + 1)), "+")
     for y in range(-height, height):
         row = [
-            "x" if Cell(x, y) in cells else " " for x in range(-width, width + 1)
+            "x" if Cell(x, y) in cells else " "
+            for x in range(-width, width + 1)
         ]
         print("|", " ".join(row), "|")
     print("+", " ".join("-" * (width * 2 + 1)), "+")
